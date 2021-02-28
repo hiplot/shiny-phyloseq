@@ -10,7 +10,7 @@ if(compareVersion(R_version, R_min_version) < 0){
        "Go to http://cran.r-project.org/ and update your version of R.")
 }
 # install or update BiocManager. Updates sometimes needed as they change in-step with BioC vers
-install.packages("BiocManager")
+#install.packages("BiocManager")
 ################################################################################
 # Install basic required packages if not available/installed.
 ################################################################################
@@ -63,12 +63,12 @@ deppkgs = c(phyloseq = "1.16.0",
             RColorBrewer = "1.1.2",
             scales = "0.4.0")
 # Loop on package check, install, update
-pkg1 = mapply(install_missing_packages,
-              pkg = names(deppkgs), 
-              version = deppkgs,
-              MoreArgs = list(verbose = TRUE), 
-              SIMPLIFY = FALSE,
-              USE.NAMES = TRUE)
+#pkg1 = mapply(install_missing_packages,
+#              pkg = names(deppkgs), 
+#              version = deppkgs,
+#              MoreArgs = list(verbose = TRUE), 
+#              SIMPLIFY = FALSE,
+#              USE.NAMES = TRUE)
 ################################################################################
 # Load packages that must be fully-loaded 
 ################################################################################
